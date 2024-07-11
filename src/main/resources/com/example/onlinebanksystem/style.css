@@ -1,0 +1,167 @@
+.label,#confirmCheckbox{
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.table-view .column-header-background .label {
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+
+.choice-box .label {
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+#tableText{
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+
+#transparentbackground {
+    -fx-background-color: rgba(0, 0, 0, 0.2);
+    -fx-background-radius: 20;
+}
+#conditionLabel2{
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+}
+
+.separator *.line{
+    -fx-border-color:gray;
+    -fx-border-width:1;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,.5), 5, 0, 0, 0);
+}
+#dashBoardLabel{
+    -fx-text-fill: #1AA2C3;
+    -fx-font-weight: bold;
+}
+
+
+#cashInBtn{
+    -fx-background-color:#1739;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-color:#1739;
+    -fx-font-size: 15;
+    -fx-border-width: 2 2 2 2;
+}
+
+#cashInBtn:hover{
+    -fx-background-color: #171 ;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+    -fx-border-color: #171;
+    -fx-border-width: 1 1 1 1;
+}
+
+#CashInPane{
+    -fx-background-color: #383838;
+    -fx-border-color:gray;
+    -fx-border-width:2;
+    -fx-border-radius: 3;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,.5), 5, 0, 0, 0);
+}
+
+#asterisk{
+    -fx-text-fill: red;
+}
+
+#errorLabel{
+    -fx-text-fill: gray;
+    -fx-font-style: italic;
+}
+
+#borderFrame,#imgBorder{
+    -fx-border-color:gray;
+    -fx-border-width:3;
+    -fx-border-radius: 4;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,.3), 5, 0, 0, 0);
+}
+
+#borderChckBal,#borderCashIn,#borderTransfer,#borderTransaction
+{
+    -fx-background-color:transparent ;
+    -fx-border-width: 1 1 1 1;
+}
+
+#borderChckBal:hover,#borderCashIn:hover,#borderTransfer:hover,#borderTransaction:hover
+{
+    -fx-border-color:#1AA2C3;
+    -fx-border-width:3;
+    -fx-border-radius: 4;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,.3), 5, 0, 0, 0);
+}
+
+#panel_MainLogin,#panel_MainRegister,#panel_MainDashboard{
+    -fx-background-color: #383838;
+}
+
+#panel_MainLogin_Leftside{
+    -fx-background-color: #383838;
+}
+
+#toolbar{
+    -fx-background-color: #383838;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,.3), 5, 0, 0, 5);
+}
+
+#lbl_Title{
+    -fx-text-fill: #1AA2C3;
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+}
+
+#lbl_TitleRegister{
+    -fx-text-fill: #1AA2C3;
+    -fx-font-weight: bold;
+}
+
+#registerBtn{
+    -fx-background-color:transparent;
+    -fx-text-fill: #1AA2C3;
+    -fx-font-weight: bold;
+    -fx-font-size: 12;
+
+}
+
+#registerBtn:hover {
+    -fx-background-color: #1AA2C3 ;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 12;
+}
+
+#loginBtn,#submitBtn{
+    -fx-background-color:transparent ;
+    -fx-text-fill: #1AA2C3;
+    -fx-font-weight: bold;
+    -fx-border-color:#1AA2C3;
+    -fx-font-size: 15;
+    -fx-border-width: 1 1 1 1;
+}
+
+#loginBtn:hover,#submitBtn:hover{
+    -fx-background-color: #1AA2C3 ;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+    -fx-border-width: 1 1 1 1;
+}
+
+#logoutBtn,#cancelBtn{
+    -fx-background-color:#C10000 ;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-color:#C10000;
+    -fx-font-size: 15;
+    -fx-border-width: 1 1 1 1;
+}
+
+#logoutBtn:hover,#cancelBtn:hover {
+    -fx-background-color: red ;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+    -fx-border-width: 1 1 1 1;
+}

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<FlowPane id="CashInPane" alignment="CENTER" columnHalignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onlinebanksystem.ControlManager">
+   <children>
+      <VBox prefHeight="530.0" prefWidth="450.0">
+         <children>
+            <FlowPane id="toolbar" alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="450.0">
+               <VBox.margin>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </VBox.margin>
+               <children>
+                  <Label fx:id="lbl_Title" text="CASH TRANSFER">
+                     <FlowPane.margin>
+                        <Insets left="20.0" />
+                     </FlowPane.margin>
+                  </Label>
+               </children>
+            </FlowPane>
+            <HBox id="CashInPane" alignment="CENTER" prefHeight="300.0" prefWidth="450.0">
+               <children>
+                  <VBox prefHeight="100.0" prefWidth="300.0">
+                     <HBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </HBox.margin>
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="46.0" prefWidth="270.0">
+                           <children>
+                              <FlowPane alignment="CENTER">
+                                 <children>
+                                    <Label fx:id="accName" text="ACCOUNT NAME">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </FlowPane>
+                              <FlowPane alignment="CENTER">
+                                 <children>
+                                    <FlowPane id="transparentbackground" alignment="CENTER" prefWidth="131.0">
+                                       <children>
+                                          <Label fx:id="accNumber" text="ACCOUNT NUMBER" />
+                                       </children>
+                                    </FlowPane>
+                                 </children>
+                              </FlowPane>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </VBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <FlowPane alignment="CENTER_LEFT">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <children>
+                                    <Label text="Balance" />
+                                 </children>
+                              </FlowPane>
+                              <FlowPane alignment="CENTER_RIGHT">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <children>
+                                    <Label fx:id="userBalance" alignment="CENTER" text="amount" textAlignment="RIGHT" />
+                                 </children>
+                              </FlowPane>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="56.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <FlowPane alignment="CENTER_LEFT">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <children>
+                                    <Label text="You're about to send">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font></Label>
+                                 </children>
+                              </FlowPane>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="118.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <FlowPane alignment="CENTER_LEFT" prefWidth="150.0">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <children>
+                                    <Label text="Amount" />
+                                 </children>
+                              </FlowPane>
+                              <FlowPane alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="150.0">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <children>
+                                    <Label fx:id="AmountTotransfer" text="amount" />
+                                 </children>
+                              </FlowPane>
+                           </children>
+                        </HBox>
+                        <Separator prefWidth="200.0">
+                           <VBox.margin>
+                              <Insets bottom="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Separator>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="138.0" prefHeight="100.0" prefWidth="300.0">
+                           <children>
+                              <FlowPane alignment="CENTER_LEFT">
+                                 <children>
+                                    <Label text="Total Amount to Pay">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></Label>
+                                 </children>
+                              </FlowPane>
+                              <FlowPane alignment="CENTER_RIGHT">
+                                 <children>
+                                    <Label layoutX="110.0" layoutY="20.0" text="₱">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets right="6.0" />
+                                       </FlowPane.margin>
+                                    </Label>
+                                    <Label fx:id="totalAmountToTransfer" text="Amount">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></Label>
+                                 </children>
+                              </FlowPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="50.0" left="20.0" right="20.0" top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="30.0" right="30.0" />
+               </VBox.margin>
+            </Separator>
+            <VBox alignment="CENTER" prefHeight="146.0" prefWidth="400.0">
+               <children>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <FlowPane alignment="CENTER">
+                           <children>
+                              <Label id="conditionLabel" ellipsisString="" text="Confirmed transactions " />
+                              <Label id="conditionLabel2" ellipsisString="" text="will not be refunded.">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </FlowPane>
+                        <Label id="conditionLabel" alignment="CENTER" ellipsisString="" text="Please make sure that the mobile number and amount are correct." />
+                        <CheckBox fx:id="confirmCheckbox" mnemonicParsing="false" onAction="#confirmTransfer" text="I confirm that the details are correct." />
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER" prefHeight="53.0" prefWidth="400.0">
+                     <children>
+                        <Button id="cancelBtn" mnemonicParsing="false" onAction="#close" prefHeight="35.0" prefWidth="100.0" text="Cancel">
+                           <HBox.margin>
+                              <Insets right="100.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button id="cashInBtn" fx:id="cashTransferSend" mnemonicParsing="false" onAction="#transferCash" prefHeight="35.0" prefWidth="100.0" text="Send" visible="false">
+                           <HBox.margin>
+                              <Insets left="50.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</FlowPane>
